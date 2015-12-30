@@ -15,7 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- for FF, Chrome, Opera -->
-    <link rel="shortcut icon" href="pictures/H.jpg" type="image/png">
+    <link rel="shortcut icon" href="img/H.jpg" type="image/png">
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
@@ -33,6 +33,16 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-66942737-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
 
     
 </head>
@@ -41,38 +51,39 @@
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="min-width:320px;min-height:200px">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="min-width:320px;min-height:700px">
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Humza Iqbal</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Humza's website</a>
+                <a class="navbar-brand page-scroll" href="#intro">About Me</a>
+                <a class="navbar-brand page-scroll" href="#Experience">Experience</a>
+                <a class="navbar-brand page-scroll" href="#projects">Projects</a>
+                <a class="navbar-brand page-scroll" href="#contact">Contact</a>
+
+
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="https://www.linkedin.com/in/humza-iqbal-b6a73899">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="http://github.com/humzaiqbal">Github</a>
+                        <a href="#page-top"></a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
+        <!-- /.container-fluid -->
     </nav>
 
     <!-- Intro Section -->
@@ -80,9 +91,8 @@
         <div class="container" style="max-width:320px;min-height:700px;line-height=10%">
             <div class="row">
                 <div class="col-lg-12">
-                    <img src="pictures/profile.jpg" class="img-thumbnail" style="width:200px"> 
+                    <img src="img/profile.jpg" class="img-thumbnail" style="width:200px"> 
                     <h1 style="text-transform:uppercase"><strong>Humza Iqbal</strong></h1>
-                    <hr class="separator">
                     <p><b>I am a student at UC Berkeley studying Computer Science with particular interest in Machine Learning, Data Science, and Natural Language Processing.
                     <p>
                 </div>
@@ -91,32 +101,310 @@
     </section>
     <div style="background-color:white;min-height:3px">
     </div>
-    <div class="background-1">
+
+
         <!-- About Section -->
-        <center>
-        <br>
-    </center>
-    <div style="background-color:white;min-height:3px">
-    </div>
-    <center>
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section background-2" style="position:absolute">
-            <div class="container" style="max-width:800px;min-height:100%">
-                    <h1>About me</h1>
-                    <div class="panel panel-default" style="background-color:rgba(255,255,255,.6)">
-                      <div class="panel-body">
-                        I am studying Computer Science. Outside of classwork I do research in a robotics lab.
-                        <br>
-                        <br>
-                        Contact Information
-                        <br>
-                        e-mail: humzaiqbal@berkeley.edu
-                      </div>
+    <section id="Experience">
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading ">Experience</h2>
+                    <h3 class="section-subheading text-muted">A collection of my research and work experiences.
+                </div>
+                <div class="col-sm-4 text-center">
+                    <div class="team-member">
+                        <img src="img/elastica.png" class="img-responsive img-circle" alt="">
+                        <h4>Machine Learning Intern at Elastica</h4>
+                        <p class="text-muted">2015 Summer | 3 months<br> Implemented machine learning classifiers for NLP problems along with a data pipeline
+                        </p>
                     </div>
+                </div>
+
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="projects" class="bg-light-gray">
+             <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Projects</h2>
+                    
+                </div>
             </div>
-        </section>
-    </center>   
+            <div class="row">
+                <div class="col-md-4 col-sm-7 portfolio-item text-center">
+                    <a href="#portfolioModal1" class="portfolio-link text-center" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/Neural_Net.jpg" class="img-responsive text-center" alt="">
+                    </a>
+                    <div class="portfolio-caption text-center">
+                        <h4>Artificial Neural Network</h4>
+                        <p class="text-muted">Learning Machine capable of both classification and regression</p>
+                    </div>
+                </div>
+                <hr color="orange">
+                <div class="col-md-4 col-sm-6 portfolio-item text-center">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/git.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption text-center">
+                        <h4>Gitlet</h4>
+                        <p class="text-muted">Miniature version of Git version control.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="col-md-4 col-sm-6 portfolio-item text-center">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/corpus.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Wordnet</h4>
+                        <p class="text-muted">Program to track history of words over time</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item text-center">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/acyclic_graph.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Maximum Acyclic Subgraph approximator</h4>
+                        <p class="text-muted">Approximation algorithms for an NP hard optimization problem</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item text-center">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/random_forrest.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Random Forrest</h4>
+                        <p class="text-muted">Random Forrest learning machine for classification</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Artifical Neural Network</h2>
+                            <p class="item-intro text-muted a " >Learning machine for classification and regression.</p>
+                            <img class="img-responsive img-centered text-center" src="img/neural_net.jpg" png="">
+                            <p> Implemented a neural network in python which can take on an arbitrary number of hidden
+                                layers and be used for both regression and classification, along with unsupervised
+                                learning." <br></p>
+                                <li><a href="https://github.com/humzaiqbal/Neural_Network">Neural Network Code</a></li>
+                                <br>
+                            <ul class="list-inline">
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+        <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Gitlet </h2>
+                            <p class="item-intro text-muted a " >Miniature version Git</p>
+                            <img class="img-responsive img-centered text-center" src="img/git.png" png="">
+                            <p> Implemented my own version of Git where in the user can perform most of the basic
+                                functionality of Git incluing commit, merge, checkout, and rebase." <br></p>
+                                <li><a href="https://github.com/humzaiqbal/Gitlet">Gitlet Code</a></li>
+                                <br>
+                            <ul class="list-inline">
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Wordnet </h2>
+                            <p class="item-intro text-muted a " >Historian of the written word</p>
+                            <img class="img-responsive img-centered text-center" src="img/corpus.jpg" png="">
+                            <p> "I use the Google NGrams corpus along with custom data structure to track the usage
+                                of various words across known literature dating back to the 1400s. In addition, I also
+                                provide an empirical representation of Zipf's law" <br></p>
+                                <li><a href="https://github.com/humzaiqbal/wordnet">Wordnet Code</a></li>
+                                <br>
+                            <ul class="list-inline">
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+            <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Random Forrest </h2>
+                            <p class="item-intro text-muted a " >Ensemble learning machine</p>
+                            <img class="img-responsive img-centered text-center" src="img/corpus.jpg" png="">
+                            <p> "I implement a Random Forrest using a combination of several decision trees, which are
+                                 trained to make splits which minimize either the cross or gini entropy" <br></p>
+                                <li><a href="https://github.com/humzaiqbal/wordnet">Random Forest Code</a></li>
+                                <br>
+                            <ul class="list-inline">
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+                <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Acyclic Subgraph approximator </h2>
+                            <p class="item-intro text-muted a " >Approximation algorithms for an NP hard problem</p>
+                            <img class="img-responsive img-centered text-center" src="img/acyclic_graph.png" png="">
+                            <p> "I implement an approximator for an NP hard optimization problem which uses
+                                multiple different algorithms per instance of the problem and takes which ever output
+                                is the highest performing. The algorithms include a genetic algorithm, a reduction to
+                                Integer Linear Programming, and randomized algorithms" <br></p>
+                                <li><a href="https://github.com/humzaiqbal/Maximum-Acyclic-Subgraph-Approximator">Acyclic Subgraph code</a></li>
+                                <br>
+                            <ul class="list-inline">
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+    </section>
+
+    <footer>
+        <p align = "center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <span class="copyright">Copyright &copy; Humza Iqbal 2015</span>
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <ul class="list-inline social-buttons"><p> Contact Me! <br> 
+                        </p>
+
+
+                            <a href="https://github.com/humzaiqbal/"><i class="fa fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/humza-iqbal-b6a73899"><i class="fa fa-linkedin"></i></a>
+                            <a href = "mailto:humzaiqbal@berkeley.edu" ><img src="img/mail.png" /></a>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </p>
+    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

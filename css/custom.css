@@ -1,5 +1,5 @@
 .background {
-    background-image: url(../pictures/background.jpg);
+    background-image: url(../img/img13.jpg);
     background-position:center;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     min-width:100%;
@@ -18,14 +18,14 @@ hr {
 }
 
 .background-1{
-	background-image: url(../img/triangle.png);
+	background-image: url(../img/sather.jpg);
 	min-width:100%;
 	min-height:100%;
 	background-attachment: fixed;
 }
 
 .background-2{
-    background-image: url(../img/img3.jpg);
+    background-image: url(../img/sather.jpg);
     background-position:center;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     min-width:100%;
