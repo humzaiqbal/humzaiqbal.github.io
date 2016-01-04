@@ -18,14 +18,14 @@ hr {
 }
 
 .background-1{
-	background-image: url(../img/sather.jpg);
-	min-width:100%;
-	min-height:100%;
-	background-attachment: fixed;
+    background-image: url(../img/img6.jpg);
+    min-width:100%;
+    min-height:100%;
+    background-attachment: fixed;
 }
 
 .background-2{
-    background-image: url(../img/sather.jpg);
+    background-image: url(../img/img3.jpg);
     background-position:center;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     min-width:100%;
@@ -35,6 +35,6 @@ hr {
 }
 
 .thumbnail-c{
-	max-width:150px;
-	max-height:150px;
+    max-width:150px;
+    max-height:150px;
 }
