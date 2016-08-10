@@ -52,39 +52,44 @@
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="min-width:320px;min-height:700px">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="min-width:320px;min-height:500px; background-color:lightred">
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top"  role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <button type="button" class="navbar-toggle" style="background=color:lightred" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Humza Iqbal</a>
+                <a class="navbar-brand page-scroll"  href="#page-top">Humza Iqbal</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" >
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#Experience">Experience</a>
+                        <a class="page-scroll"  href="#Experience">Experience</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
+                        <a class="page-scroll"  href="#projects">Projects</a>
 
                     </li>
                     <li>
-                        <a class="page-scroll" href="#Contact">Contact</a>
+                        <a  href = "mailto:humzaiqbal@berkeley.edu" >Email</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="Humza_Iqbal_Resume.pdf">Resumé</a>
+                        <a class="page-scroll"  href="Humza_Iqbal_Resume.pdf">Resumé</a>
+                    <li>
+                        <a class="page-scroll"  href="https://www.linkedin.com/in/humza-iqbal-b6a73899">LinkedIn</a>
+                    <li>
+                        <a class="page-scroll" href="https://github.com/humzaiqbal/">Github</a>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -98,7 +103,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <img src="img/profile.jpg" class="img-thumbnail" style="width:200px"> 
-                    <h1 style="text-transform:uppercase"><strong>Humza Iqbal</strong></h1>
+                    <h1 style="text-transform:uppercase" ><strong>Humza Iqbal</strong></h1>
                     <p><b>I am a student at UC Berkeley studying Computer Science with particular interest in Machine Learning, Data Science, and Natural Language Processing.
                     <p>
                 </div>
@@ -108,7 +113,7 @@
     <div style="background-color:white;min-height:3px">
     </div>
 
-    <div class="background-1">
+    <div class="background">
         <center>
         <!-- About Section -->
         <section id="Experience">
@@ -118,11 +123,30 @@
                         <h2 class="section-heading ">Experience</h2>
                         <h3 class="section-subheading text-muted">A collection of my research and work experiences.
                     </div>
+
+
+                    <div class="col-lg-12 text-center">
+                        <div class="col-lg-12 text-center">
+                            <img src="img/healthpals.jpg"></img>
+                            <h4>Data Science Intern at HealthPals</h4>
+                            <p class="text-muted" font color="red">May 2016 - Aug 2016<br> Using sensitivity analysis to understand how different risk factors interact with each other to contribute to heart disease and implemented analytics tool for patients to view 10 year risk of heart attack
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 text-center">
+                        <div class="col-lg-12 text-center">
+                            <img src="img/mlab.png"></img>
+                            <h4>Undergraduate Research at Machine Learning at Berkeley(MLaB)</h4>
+                            <p class="text-muted" font color="red">May 2016 - Present<br> Working on Machine Learning project with Grand Rounds in order to find anomalies in medicare data as well as general analysis
+                            </p>
+                        </div>
+                    </div>
                     <div class="col-lg-12 text-center">
                         <div class="col-lg-12 text-center">
                             <img src="img/elastica.png"></img>
                             <h4>Machine Learning Intern at Elastica</h4>
-                            <p class="text-muted">2015 Summer | 3 months><br> Implemented machine learning classifiers for NLP problems with 90% test accuracy along with a data pipeline
+                            <p class="text-muted" font color="red">May 2015 - Aug 2015<br> Implemented machine learning classifiers for NLP problems with 90% test accuracy along with a data pipeline
                             </p>
                         </div>
                     </div>
@@ -396,36 +420,6 @@
         </div>
 
 
-
-
-
-
-        <!-- Contact Section -->
-        <section id="Contact">
-            <footer>
-                <p align = "center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4 text-center">
-                                <span class="copyright">Copyright &copy; Humza Iqbal 2015</span>
-                            </div>
-                            <div class="col-lg-12 text-center">
-                                <ul class="list-inline social-buttons"><p align = "center">  <br> 
-                                </p>
-
-
-                                    <a href="https://github.com/humzaiqbal/"><i class="fa fa-github"></i></a>
-                                    <a href="https://www.linkedin.com/in/humza-iqbal-b6a73899"><i class="fa fa-linkedin"></i></a>
-                                    <a href = "mailto:humzaiqbal@berkeley.edu" ><img src="img/mail.png" /></a>
-                                </ul>
-                            </div>  
-                        </div>
-                    </div>
-                </p>
-            </footer>
-        </section>
-    </center>
-    </div>
 
 
 
